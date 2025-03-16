@@ -5,15 +5,16 @@ interface GlitchOptionsProps {
 
 export default function GlitchOptions({ style, onStyleChange }: GlitchOptionsProps) {
   const styles = [
-    { id: 'zalgo', name: 'Zalgo 风格' },
-    { id: 'random', name: 'Unicode 随机' },
-    { id: 'mirror', name: '字符镜像' },
+    { id: 'zalgo', name: 'Zalgo' },
+    // { id: 'zalgo2', name: 'Zalgo2' },
+    { id: 'random', name: 'Unicode Radom' },
+    { id: 'mirror', name: 'Char mirror' },
   ]
 
   return (
     <div className="space-y-3">
       <label className="block text-lg font-medium text-gray-700 dark:text-gray-200">
-        选择故障风格
+        Choose Generate Style
       </label>
       <div className="flex flex-wrap gap-3">
         {styles.map((s) => (
